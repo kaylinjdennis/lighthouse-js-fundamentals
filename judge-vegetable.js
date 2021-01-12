@@ -1,9 +1,7 @@
 const judgeVegetable = function(vegetables, metric) {
     let winningVal = (vegetables[0])[metric];
-    console.log(winningVal);
     let winner = (vegetables[0]).submitter;
     for (let i = 1; i < vegetables.length; i++) {
-        console.log('enter loop');
         if ((vegetables[i])[metric] > winningVal) {
             winningVal = (vegetables[i])[metric];
             winner = (vegetables[i]).submitter;
